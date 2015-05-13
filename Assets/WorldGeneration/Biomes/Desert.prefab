@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Desert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.48851192, y: .807262659, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baea6619ab920a04c91d220d43885106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Agents:
+  - Component: {fileID: 11400000, guid: ffe10ff3b805a2e4290853ca0f0250d9, type: 2}
+    Weight: 3.29999995
+  - Component: {fileID: 11400000, guid: 3262d065ff5b5064fac11337c193ed4d, type: 2}
+    Weight: 1.20000005
+  - Component: {fileID: 11400000, guid: aa3309ae2152eae4093ad485e2fc8bf2, type: 2}
+    Weight: .400000006
+  Background: {fileID: 11400000, guid: 4fbe7415b0fdd8c4abed9b59a18b69f8, type: 2}
+  Clusters:
+  - Component:
+      Block: {fileID: 11400000, guid: 88023d2357684db4dbe3dca6d78f21b9, type: 2}
+      Type: 0
+    Weight: 2
+  - Component:
+      Block: {fileID: 11400000, guid: 9741f7bf75b706448bde7b1d3009fdb4, type: 2}
+      Type: 2
+    Weight: 1
+  - Component:
+      Block: {fileID: 11400000, guid: 657b3985167a52d43bb82ba6fe2d92af, type: 2}
+      Type: 3
+    Weight: 0
+  - Component:
+      Block: {fileID: 0}
+      Type: -1
+    Weight: .200000003
+  - Component:
+      Block: {fileID: 11400000, guid: e76eb2adaebd1e34a9bb5fb8571acd17, type: 2}
+      Type: 5
+    Weight: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

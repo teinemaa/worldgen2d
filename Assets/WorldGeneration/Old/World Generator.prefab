@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 10
+  m_Name: World Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea52f34f6801e443b47a1e2d400dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  World: {fileID: 0}
+  seed: 0
+  blockProperties:
+  - texture: {fileID: 2800000, guid: 29b7a782776f04249bbc5e85ff1619fb, type: 3}
+    immovable: 0
+    passable: 0
+    mass: 50
+    compressStrength: 800
+    compressFlexibility: .200000003
+    stretchStrength: 50
+    stretchFlexibility: .400000006
+    dampening: 8
+  - texture: {fileID: 2800000, guid: 0a55c6a338d0259478eda27f21357c4e, type: 3}
+    immovable: 0
+    passable: 0
+    mass: 50
+    compressStrength: 500
+    compressFlexibility: .699999988
+    stretchStrength: 15
+    stretchFlexibility: .699999988
+    dampening: 2
+  - texture: {fileID: 2800000, guid: 862f932915bca704f9bafb34710a9d14, type: 3}
+    immovable: 0
+    passable: 0
+    mass: 80
+    compressStrength: 2500
+    compressFlexibility: .200000003
+    stretchStrength: 2500
+    stretchFlexibility: .200000003
+    dampening: 8
+  - texture: {fileID: 2800000, guid: 96a1ef28d4d4a314b83b98b97bb7db47, type: 3}
+    immovable: 0
+    passable: 0
+    mass: 10
+    compressStrength: 3500
+    compressFlexibility: .200000003
+    stretchStrength: 3500
+    stretchFlexibility: .200000003
+    dampening: 5
+  - texture: {fileID: 2800000, guid: 5eafd189121fcf74a841d3f06b69d53b, type: 3}
+    immovable: 0
+    passable: 1
+    mass: 10
+    compressStrength: 3500
+    compressFlexibility: .200000003
+    stretchStrength: 3500
+    stretchFlexibility: .200000003
+    dampening: 5
+  - texture: {fileID: 2800000, guid: 3a455057d151421488e7b5eae1d8fd42, type: 3}
+    immovable: 0
+    passable: 0
+    mass: 5
+    compressStrength: 500
+    compressFlexibility: .200000003
+    stretchStrength: 500
+    stretchFlexibility: .300000012
+    dampening: 5
+  - texture: {fileID: 2800000, guid: 06b51afa340845c499eb9219da0c6ca2, type: 3}
+    immovable: 0
+    passable: 0
+    mass: 1
+    compressStrength: 100
+    compressFlexibility: .5
+    stretchStrength: 100
+    stretchFlexibility: .5
+    dampening: 5
+  - texture: {fileID: 2800000, guid: 0428fd38f34d5f0438fc0d76dff3ea6d, type: 3}
+    immovable: 0
+    passable: 0
+    mass: 80
+    compressStrength: 3500
+    compressFlexibility: .200000003
+    stretchStrength: 2500
+    stretchFlexibility: .200000003
+    dampening: 12
+  - texture: {fileID: 2800000, guid: c58608d0d13fc00418930dd98eaf6507, type: 3}
+    immovable: 0
+    passable: 0
+    mass: 80
+    compressStrength: 3500
+    compressFlexibility: .200000003
+    stretchStrength: 2500
+    stretchFlexibility: .200000003
+    dampening: 12
+  backgroundProperties:
+  - texture: {fileID: 2800000, guid: 2a6147c9eb0965146941d0c6bf8bc284, type: 3}
+    strengthMultiplier: .5
+    flexibility: .5
+    dampeningMultiplier: .699999988
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
